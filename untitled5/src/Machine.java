@@ -6,9 +6,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -97,6 +95,17 @@ public class Machine extends JFrame implements MouseListener
 
         s1.setHorizontalAlignment(s1.CENTER);
         s2.setHorizontalAlignment(s2.CENTER);
+
+        j2.setPreferredSize(new Dimension(250, 250));
+        j3.setPreferredSize(new Dimension(75,75));
+        j4.setPreferredSize(new Dimension(75,75));
+        j5.setPreferredSize(new Dimension(100,100));
+
+        this.getContentPane().add(j2,BorderLayout.NORTH);
+        this.getContentPane().add(j3,BorderLayout.CENTER);
+        this.getContentPane().add(j4,BorderLayout.CENTER);
+        this.getContentPane().add(j5,BorderLayout.SOUTH);
+
 
         this.setVisible(true);
     }
